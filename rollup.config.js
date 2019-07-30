@@ -13,13 +13,15 @@ const banner = `/**
  */`;
 
 const plugins = [
-  babel({
-    exclude: ['node_modules/**'],
-  }),
+  babel({ exclude: ['node_modules/**'] }),
+  license({ banner }),
+];
+
+const umdPlugins = [
+  babel({ exclude: ['node_modules/**'] }),
   uglify(),
-  license({
-    banner,
-  }),
+  license({ banner }),
+  resolve(),
 ];
 
 export default [
@@ -36,8 +38,14 @@ export default [
     input: 'src/panelsnap.js',
     output: [
       { file: pkg.browser, format: 'umd', name: 'PanelSnap' },
+    ],
+    plugins: umdPlugins,
+  },
+  {
+    input: 'src/panelsnap.js',
+    output: [
       { file: 'docs/panelsnap.js', format: 'umd', name: 'PanelSnap' },
     ],
-    plugins: [...plugins, resolve()],
+    plugins: umdPlugins,
   },
 ];
