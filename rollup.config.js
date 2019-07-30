@@ -1,6 +1,6 @@
 import babel from 'rollup-plugin-babel';
 import license from 'rollup-plugin-license';
-import uglify from 'rollup-plugin-uglify';
+import { uglify } from 'rollup-plugin-uglify';
 import resolve from 'rollup-plugin-node-resolve';
 import pkg from './package.json';
 

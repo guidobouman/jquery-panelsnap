@@ -27,26 +27,26 @@
     "scrolling"
   ],
   "dependencies": {
+    "babel-core": "^7.0.0-bridge.0",
     "tweezer.js": "^1.4.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0-beta.46",
-    "@babel/preset-env": "^7.0.0-beta.46",
-    "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "^22.4.3",
-    "commitizen": "^2.9.6",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "babel-jest": "^23.6.0",
+    "commitizen": "^3.0.5",
     "cz-conventional-changelog": "^2.1.0",
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.11.0",
-    "eslint-plugin-jest": "^21.15.1",
-    "jest": "^22.4.3",
-    "rollup": "^0.57.1",
-    "rollup-plugin-babel": "^4.0.0-beta.4",
-    "rollup-plugin-license": "^0.6.0",
-    "rollup-plugin-node-resolve": "^3.3.0",
-    "rollup-plugin-uglify": "^3.0.0",
-    "semantic-release": "^15.1.7"
+    "eslint": "^5.11.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^22.1.2",
+    "jest": "^23.6.0",
+    "rollup": "^0.68.2",
+    "rollup-plugin-babel": "^4.1.0",
+    "rollup-plugin-license": "^0.7.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-uglify": "^6.0.0",
+    "semantic-release": "^15.13.1"
   },
   "scripts": {
     "dev": "rollup -c -w",
